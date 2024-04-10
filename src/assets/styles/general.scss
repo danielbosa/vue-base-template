@@ -1,0 +1,17 @@
+@use './partials/variables' as *;
+
+$fa-font-path: '../fonts/webfonts';
+//per aggirare il problema dei fonts non raggiungibili, qui vado a modificare la variabile che regola il path che fontawesome segue per arrivare ai font da usare;
+//preventivamente, ho copiato la cartella webfonts da fontawesome e me la sono incollata nella mia cartella assets -> fonts
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import 'bootstrap/scss/bootstrap';
+//se non metto nulla, parto da cartella node_modules --> vado in cartella node_modules -> bootstrap -> scss -> bootstrap
+
+h1{
+    color: $lightblue;
+}
+
